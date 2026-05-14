@@ -47,6 +47,10 @@ h1, h2, h3, .brand-title { font-family: 'Outfit', sans-serif; font-weight: 800; 
     overflow-y: auto;
 }
 
+/* Hide mobile-only elements by default */
+.mobile-menu-btn, .sidebar-header-mobile { display: none; }
+
+
 .sidebar::-webkit-scrollbar {
     width: 0;
     background: transparent;
@@ -449,14 +453,27 @@ section {
         justify-content: space-between;
         margin-bottom: 2rem;
         padding: 0 0.5rem;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        padding-bottom: 1rem;
+    }
+    .sidebar-header-mobile .side-brand {
+        color: var(--primary);
+        font-weight: 800;
     }
     .sidebar-header-mobile .close-sidebar {
-        font-size: 2rem;
-        background: none;
+        font-size: 1.5rem;
+        background: rgba(0,0,0,0.05);
         border: none;
         color: var(--text-gray);
         cursor: pointer;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
     }
+
 
     /* Show labels on mobile active sidebar */
     .sidebar.active .nav-label, 
@@ -486,6 +503,5 @@ section {
     .hero-logo-left, .hero-logo-right { height: 60px; }
 }
 
-.mobile-menu-btn { display: none; }
-.sidebar-header-mobile { display: none; }
+
 
