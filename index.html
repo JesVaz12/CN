@@ -9,9 +9,22 @@
 </head>
 
 <body>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
 
     <!-- Sidebar Navigation (Collapsible) -->
     <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header-mobile">
+            <span class="side-brand">Menú</span>
+            <button class="close-sidebar" id="closeSidebar">&times;</button>
+        </div>
+
 
         <nav class="side-nav">
             <div class="nav-group">
@@ -31,8 +44,8 @@
                 <ul class="side-links">
                     <li>
                         <a href="#introduccion" class="side-link">
-                            <svg class="side-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="side-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="10" />
                                 <line x1="12" y1="16" x2="12" y2="12" />
                                 <line x1="12" y1="8" x2="12.01" y2="8" />
@@ -42,8 +55,8 @@
                     </li>
                     <li>
                         <a href="#objetivos" class="side-link">
-                            <svg class="side-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="side-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="10" />
                                 <circle cx="12" cy="12" r="6" />
                                 <circle cx="12" cy="12" r="2" />

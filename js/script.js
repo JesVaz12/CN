@@ -46,36 +46,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========== Sidebar Interaction Logic ==========
     const sidebar = document.getElementById('sidebar');
     const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const closeSidebarBtn = document.getElementById('closeSidebar');
 
-    const toggleSidebar = () => {
-        sidebar.classList.toggle('active');
-        sidebarOverlay.classList.toggle('active');
+    const openSidebar = () => {
+        sidebar.classList.add('active');
+        sidebarOverlay.classList.add('active');
     };
 
-    // Open when clicking the peeking area
+    const closeSidebar = () => {
+        sidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+    };
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openSidebar);
+    if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeSidebar);
+
+    // Open when clicking the peeking area (Desktop)
     sidebar.addEventListener('click', (e) => {
-        if (window.innerWidth <= 1024 || !sidebar.classList.contains('active')) {
-            if (e.target.closest('.sidebar')) {
-                sidebar.classList.add('active');
-                sidebarOverlay.classList.add('active');
-            }
+        if (window.innerWidth > 1024 && !sidebar.classList.contains('active')) {
+            openSidebar();
         }
     });
 
     if (sidebarOverlay) {
-        sidebarOverlay.addEventListener('click', () => {
-            sidebar.classList.remove('active');
-            sidebarOverlay.classList.remove('active');
-        });
+        sidebarOverlay.addEventListener('click', closeSidebar);
     }
 
     // Close sidebar when a link is clicked
     const allSideLinks = document.querySelectorAll('.sidebar a');
     allSideLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            sidebar.classList.remove('active');
-            sidebarOverlay.classList.remove('active');
-        });
+        link.addEventListener('click', closeSidebar);
     });
 
     // ========== Smooth Internal Scrolling ==========
