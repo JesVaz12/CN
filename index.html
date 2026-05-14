@@ -4,398 +4,1233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Evidencias - Cómputo en la Nube</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Portafolio Cloud — Neuros Edition</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar glass-effect">
-        <div class="logo-container">
-            <img src="assets/img/logo_tecnm.png" alt="TecNM Logo" class="nav-logo">
-            <img src="assets/img/logo_tec_saltillo.png" alt="Tec Saltillo Logo" class="nav-logo">
-            <span class="nav-title">TecNM / Sistemas Saltillo</span>
+
+    <!-- Sidebar Navigation (Collapsible) -->
+    <aside class="sidebar" id="sidebar">
+
+        <nav class="side-nav">
+            <div class="nav-group">
+                <span class="nav-label">Bienvenida</span>
+                <a href="#inicio" class="side-link-main">
+                    <svg class="side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                    <span>Inicio</span>
+                </a>
+            </div>
+
+            <div class="nav-group">
+                <span class="nav-label">Contenido</span>
+                <ul class="side-links">
+                    <li>
+                        <a href="#introduccion" class="side-link">
+                            <svg class="side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="16" x2="12" y2="12" />
+                                <line x1="12" y1="8" x2="12.01" y2="8" />
+                            </svg>
+                            <span>Introducción</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#objetivos" class="side-link">
+                            <svg class="side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                            <span>Objetivos</span>
+                        </a>
+                    </li>
+                    <li><a href="#unidad1" class="side-link" data-unit="01"><span>Unidad 1</span></a></li>
+                    <li><a href="#unidad2" class="side-link" data-unit="02"><span>Unidad 2</span></a></li>
+                    <li><a href="#unidad3" class="side-link" data-unit="03"><span>Unidad 3</span></a></li>
+                    <li><a href="#unidad4" class="side-link" data-unit="04"><span>Unidad 4</span></a></li>
+                    <li><a href="#unidad5" class="side-link" data-unit="05"><span>Unidad 5</span></a></li>
+                    <li>
+                        <a href="#conclusion" class="side-link">
+                            <svg class="side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            <span>Conclusión</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-group">
+                <span class="nav-label">Finalización</span>
+                <a href="#reflexion" class="side-link-main">
+                    <svg class="side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                    </svg>
+                    <span>Reflexión Final</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-footer">
+            <span class="footer-tag">Cloud Portfolio</span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#portada">Inicio</a></li>
-            <li><a href="#introduccion">Introducción</a></li>
-            <li><a href="#objetivos">Objetivos</a></li>
-            <li><a href="#evidencias">Evidencias</a></li>
-            <li><a href="#reflexion">Reflexión</a></li>
-            <li><a href="#conclusion">Conclusión</a></li>
-        </ul>
-        <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
-    </nav>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <main>
-        <!-- Portada -->
-        <section id="portada" class="hero section-padding">
-            <div class="background-elements">
-                <div class="blob blob-1"></div>
-                <div class="blob blob-2"></div>
-                <div class="blob blob-3"></div>
+        <!-- Section 0: Hero -->
+        <section id="inicio" class="section-blue">
+            <!-- Institutional Logos -->
+            <div class="hero-logos">
+                <img src="assets/img/logo_tecnm.png" alt="TecNM" class="hero-logo-left">
+                <img src="assets/img/logo_tec_saltillo.png" alt="Tec Saltillo" class="hero-logo-right">
             </div>
-            <div class="hero-content glass-card fade-in-up">
-                <div class="hero-logos">
-                    <img src="assets/img/logo_tecnm.png" alt="TecNM Logo" class="hero-logo">
-                    <img src="assets/img/logo_tec_saltillo.png" alt="Tec Saltillo Logo" class="hero-logo">
-                </div>
-                <h1 class="gradient-text">Portafolio de Evidencias</h1>
-                <h2 class="hero-subtitle">Curso de Cómputo en la Nube</h2>
-                <div class="student-info">
-                    <div class="info-item"><span class="info-label">Estudiante</span><span class="info-value">Jesús
-                            Francisco Vázquez Alvarado</span></div>
-                    <div class="info-item"><span class="info-label">Profesor</span><span class="info-value">Miguel
-                            Salazar Del Bosque
-                        </span></div>
-                    <div class="info-item"><span class="info-label">Semestre</span><span class="info-value">Enero -
-                            Junio 2026</span></div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Introducción -->
-        <section id="introduccion" class="section-padding">
-            <div class="container glass-card reveal">
-                <h2 class="section-title">Introducción</h2>
-                <div class="content-block">
-                    <p>Este portafolio de evidencias representa un recorrido integral por el ecosistema del <strong>Cómputo en la Nube</strong>, abarcando desde los fundamentos teóricos hasta la implementación técnica avanzada. A lo largo de cinco unidades temáticas y 26 actividades prácticas, se documenta la transición desde la comprensión de arquitecturas de red básicas hasta el despliegue de infraestructuras complejas, escalables y seguras.</p>
-                    <p>El contenido aquí presentado inicia con los conceptos base y modelos de servicio (IaaS, PaaS, SaaS), explorando las principales plataformas globales como <strong>AWS, Google Cloud y Microsoft Azure</strong>. Posteriormente, el enfoque se desplaza hacia metodologías modernas de desarrollo como Microservicios y DevOps, integrando prácticas críticas de <strong>ciberseguridad</strong> —incluyendo análisis forense de red y endurecimiento de servidores— para culminar con la virtualización mediante <strong>Docker</strong> y el despliegue de servicios administrados. Este conjunto de evidencias refleja no solo el dominio técnico, sino también una visión estratégica sobre la optimización de recursos en entornos digitales modernos.</p>
-                </div>
-            </div>
-        </section>
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="container text-center">
+                <h1 class="hero-title">Portafolio de<br>Evidencias</h1>
+                <p class="hero-subtitle">Curso de Cómputo en la Nube</p>
 
-        <!-- Objetivos -->
-        <section id="objetivos" class="section-padding">
-            <div class="container reveal">
-                <h2 class="section-title text-center">Objetivos del Curso</h2>
-                <div class="grid-2">
-                    <div class="objective-card glass-card hover-effect">
-                        <div class="card-icon">🎯</div>
-                        <h3>Objetivo General</h3>
-                        <p>Comprender, analizar y aplicar los conceptos, arquitecturas y servicios de cómputo en la nube
-                            para el diseño, desarrollo e implementación de soluciones tecnológicas escalables,
-                            resilientes y seguras.</p>
+                <div class="student-card" style="margin: 0 auto; max-width: 800px;">
+                    <div class="student-stat">
+                        <span class="stat-label">Estudiante</span>
+                        <span class="stat-value">Jesús Francisco Vázquez Alvarado</span>
                     </div>
-                    <div class="objective-card glass-card hover-effect">
-                        <div class="card-icon">🚀</div>
-                        <h3>Objetivos Específicos</h3>
-                        <ul>
-                            <li>Identificar y diferenciar los modelos de servicio (IaaS, PaaS, SaaS) y modelos de
-                                despliegue.</li>
-                            <li>Desplegar aplicaciones y gestionar servicios en plataformas líderes en la nube.</li>
-                            <li>Implementar prácticas de seguridad, alta disponibilidad y optimización de recursos.</li>
-                        </ul>
+                    <div style="width: 1px; background: rgba(255,255,255,0.2);"></div>
+                    <div class="student-stat">
+                        <span class="stat-label">Profesor</span>
+                        <span class="stat-value">Miguel Salazar Del Bosque</span>
+                    </div>
+                    <div style="width: 1px; background: rgba(255,255,255,0.2);"></div>
+                    <div class="student-stat">
+                        <span class="stat-label">Ingeniería</span>
+                        <span class="stat-value">Sistemas Computacionales</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Evidencias -->
-        <section id="evidencias" class="section-padding">
-            <div class="container reveal">
-                <h2 class="section-title text-center">Evidencias de Aprendizaje</h2>
-                <p class="text-center subtitle">26 actividades organizadas por unidad temática. Haz clic en "Ver PDF"
-                    para visualizar cada evidencia.</p>
-
-                <!-- Unidad 1 -->
-                <h3 class="unit-title">Unidad 1 — Fundamentos del Cómputo en la Nube</h3>
-                <div class="evidencias-grid" id="evidencias-container">
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/1.1 Arquitectura de red de computadoras.pdf">
-                        <span class="card-number">1.1</span>
-                        <h3>Arquitectura de red de computadoras</h3>
-                        <div class="card-actions">
-                            <button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button>
-                            <a class="btn-download" href="assets/pdf/1.1 Arquitectura de red de computadoras.pdf" download>⬇
-                                Descargar</a>
+        <!-- Section: Introducción -->
+        <section id="introduccion" class="section-white">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <span class="unit-label" style="margin: 0;">Bienvenida</span>
+                        <div style="color:var(--primary);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="16" x2="12" y2="12" />
+                                <line x1="12" y1="8" x2="12.01" y2="8" />
+                            </svg>
                         </div>
                     </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/1.2 Síntesis de las Características de concepto de Cómputo en la Nube..pdf">
-                        <span class="card-number">1.2</span>
-                        <h3>Síntesis de las Características de concepto de Cómputo en la Nube</h3>
-                        <div class="card-actions">
-                            <button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button>
-                            <a class="btn-download"
-                                href="assets/pdf/1.2 Síntesis de las Características de concepto de Cómputo en la Nube..pdf"
-                                download>⬇ Descargar</a>
+                    <h2 class="scenario-title">Introducción</h2>
+                    <p class="scenario-text" style="font-size: 1.1rem; line-height: 1.8;">
+                        El presente portafolio de evidencias es una recopilación estructurada de los conocimientos,
+                        habilidades y competencias adquiridas durante el curso de <strong>Cómputo en la Nube</strong>. A
+                        lo largo de este periodo, hemos explorado la transformación digital desde sus cimientos teóricos
+                        hasta la implementación de arquitecturas complejas en plataformas líderes de la industria.
+                    </p>
+                    <p class="scenario-text" style="margin-top: 1rem;">
+                        A través de una serie de actividades prácticas, investigaciones y laboratorios, este documento
+                        digital refleja el viaje de aprendizaje hacia el dominio de tecnologías que están definiendo el
+                        futuro de la ingeniería de software y la infraestructura tecnológica global.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Objetivos -->
+        <section id="objetivos" class="section-blue">
+            <div class="container">
+                <div style="max-width: 1000px; margin: 0 auto;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <span class="unit-label" style="margin: 0;">Propósito</span>
+                        <div style="color:var(--primary);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
                         </div>
                     </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/1.3 Ventajas, Desventajas y Riesgos del Cómputo en la Nube.pdf">
-                        <span class="card-number">1.3</span>
-                        <h3>Ventajas, Desventajas y Riesgos del Cómputo en la Nube</h3>
-                        <div class="card-actions">
-                            <button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button>
-                            <a class="btn-download"
-                                href="assets/pdf/1.3 Ventajas, Desventajas y Riesgos del Cómputo en la Nube.pdf" download>⬇
-                                Descargar</a>
+                    <h2 class="scenario-title">Objetivos del Portafolio</h2>
+
+                    <div class="scenario-grid"
+                        style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                        <div class="activity-card" style="padding: 2.5rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1.5rem; display:flex; align-items:center; gap:0.75rem;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                Objetivo General
+                            </h4>
+                            <p style="font-size:1rem; color:var(--text-dark); line-height:1.6;">
+                                Integrar de manera integral los conocimientos teóricos y prácticos sobre el paradigma
+                                del cómputo en la nube, permitiendo el diseño, despliegue y aseguramiento de
+                                aplicaciones modernas que respondan a las demandas de escalabilidad y eficiencia de la
+                                industria actual.
+                            </p>
                         </div>
-                    </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/1.4 Mapa mental de los elementos del Cómputo en la Nube.pdf">
-                        <span class="card-number">1.4</span>
-                        <h3>Mapa mental de los elementos del Cómputo en la Nube</h3>
-                        <div class="card-actions">
-                            <button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button>
-                            <a class="btn-download"
-                                href="assets/pdf/1.4 Mapa mental de los elementos del Cómputo en la Nube.pdf" download>⬇
-                                Descargar</a>
+
+                        <div class="activity-card" style="padding: 2.5rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1.5rem; display:flex; align-items:center; gap:0.75rem;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                Objetivos Específicos
+                            </h4>
+                            <ul
+                                style="font-size:0.9rem; color:var(--text-gray); line-height:1.7; list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.8rem;">• Identificar y diferenciar los modelos de servicio
+                                    (SaaS, PaaS, IaaS) y sus casos de uso reales.</li>
+                                <li style="margin-bottom: 0.8rem;">• Masterizar el uso de consolas de administración
+                                    profesional en AWS, Google Cloud y MS Azure.</li>
+                                <li style="margin-bottom: 0.8rem;">• Aplicar metodologías DevOps y herramientas de
+                                    contenerización para agilizar el ciclo de desarrollo.</li>
+                                <li style="margin-bottom: 0.8rem;">• Implementar robustas estrategias de ciberseguridad
+                                    para proteger la integridad de los datos en entornos distribuidos.</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Unidad 2 -->
-                <h3 class="unit-title">Unidad 2 — Plataformas y Servicios en la Nube</h3>
-                <div class="evidencias-grid">
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/2.1 Explorar la plataforma AWS.pdf">
-                        <span class="card-number">2.1</span>
-                        <h3>Explorar la plataforma AWS</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/2.1 Explorar la plataforma AWS.pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/2.2 Explorar plataforma Google Cloud.pdf">
-                        <span class="card-number">2.2</span>
-                        <h3>Explorar plataforma Google Cloud</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/2.2 Explorar plataforma Google Cloud.pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/2.3 Actividad GitHub.pdf">
-                        <span class="card-number">2.3</span>
-                        <h3>Actividad GitHub</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/2.3 Actividad GitHub.pdf" download>⬇ Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/2.4 Explorar la plataforma MS Azure.pdf">
-                        <span class="card-number">2.4</span>
-                        <h3>Explorar la plataforma MS Azure</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/2.4 Explorar la plataforma MS Azure.pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                </div>
-
-                <!-- Unidad 3 -->
-                <h3 class="unit-title">Unidad 3 — Microservicios y DevOps</h3>
-                <div class="evidencias-grid">
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/3.1 Sinopsis de los microservicios y flujo devops.pdf">
-                        <span class="card-number">3.1</span>
-                        <h3>Sinopsis de los microservicios y flujo DevOps</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/3.1 Sinopsis de los microservicios y flujo devops.pdf"
-                                download>⬇ Descargar</a></div>
-                    </div>
-                </div>
-
-                <!-- Unidad 4 -->
-                <h3 class="unit-title">Unidad 4 — Seguridad y Ciberseguridad en la Nube</h3>
-                <div class="evidencias-grid">
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/4.1 Práctica de seguridad informática escalada de privilegios.pdf">
-                        <span class="card-number">4.1</span>
-                        <h3>Práctica de seguridad informática: escalada de privilegios</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download"
-                                href="assets/pdf/4.1 Práctica de seguridad informática escalada de privilegios.pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/4.2 Demostrar la inyección SQL.pdf">
-                        <span class="card-number">4.2</span>
-                        <h3>Demostrar la inyección SQL</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/4.2 Demostrar la inyección SQL.pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/4.3 Seguridad (hardening) en servidor web Apache 2.pdf">
-                        <span class="card-number">4.3</span>
-                        <h3>Seguridad (hardening) en servidor web Apache 2</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/4.3 Seguridad (hardening) en servidor web Apache 2.pdf"
-                                download>⬇ Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/4.5 Comandos Dorks de Goolge.pdf">
-                        <span class="card-number">4.5</span>
-                        <h3>Comandos Dorks de Google</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/4.5 Comandos Dorks de Goolge.pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/4.6 Lluvia de conceptos de los aspectos de la ciberseguridad en la nube..pdf">
-                        <span class="card-number">4.6</span>
-                        <h3>Lluvia de conceptos: aspectos de la ciberseguridad en la nube</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download"
-                                href="assets/pdf/4.6 Lluvia de conceptos de los aspectos de la ciberseguridad en la nube..pdf"
-                                download>⬇ Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/4.7 Encontrar la contraseña (overthewire).pdf">
-                        <span class="card-number">4.7</span>
-                        <h3>Encontrar la contraseña (OverTheWire)</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/4.7 Encontrar la contraseña (overthewire).pdf"
-                                download>⬇ Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/4.8 Amenazar y Riesgos en Cómputo en la Nube.pdf">
-                        <span class="card-number">4.8</span>
-                        <h3>Amenazas y Riesgos en Cómputo en la Nube</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/4.8 Amenazar y Riesgos en Cómputo en la Nube.pdf"
-                                download>⬇ Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/4.9 Políticasd e ciberseguridad en CN.pdf">
-                        <span class="card-number">4.9</span>
-                        <h3>Políticas de ciberseguridad en Cómputo en la Nube</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/4.9 Políticasd e ciberseguridad en CN.pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/4.10 Análisis de tráfico de red con Wireshark para la prevención de ataques.pdf">
-                        <span class="card-number">4.10</span>
-                        <h3>Análisis de tráfico de red con Wireshark</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download"
-                                href="assets/pdf/4.10 Análisis de tráfico de red con Wireshark para la prevención de ataques.pdf"
-                                download>⬇ Descargar</a></div>
-                    </div>
-                </div>
-
-                <!-- Unidad 5 -->
-                <h3 class="unit-title">Unidad 5 — Infraestructura y Despliegue en la Nube</h3>
-                <div class="evidencias-grid">
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/5.2 Análisis y Diseño de una Arquitectura de Red en la Nube (Caso Real).pdf">
-                        <span class="card-number">5.2</span>
-                        <h3>Análisis y Diseño de una Arquitectura de Red en la Nube</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download"
-                                href="assets/pdf/5.2 Análisis y Diseño de una Arquitectura de Red en la Nube (Caso Real).pdf"
-                                download>⬇ Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/5.3 Curso introducción a la contenerización y virtualización..pdf">
-                        <span class="card-number">5.3</span>
-                        <h3>Curso introducción a la contenerización y virtualización</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download"
-                                href="assets/pdf/5.3 Curso introducción a la contenerización y virtualización..pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/5.4 Instalación de Docker.pdf">
-                        <span class="card-number">5.4</span>
-                        <h3>Instalación de Docker</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/5.4 Instalación de Docker.pdf" download>⬇ Descargar</a>
-                        </div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/5.4.1 Instalación de Docker.pdf">
-                        <span class="card-number">5.4.1</span>
-                        <h3>Instalación de Docker (complemento)</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/5.4.1 Instalación de Docker.pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/5.7 Creación de VM en la nube.pdf">
-                        <span class="card-number">5.7</span>
-                        <h3>Creación de VM en la nube</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/5.7 Creación de VM en la nube.pdf" download>⬇
-                                Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/5.8 Instalación del entorno LAMP en una máquina virtual en infraestructura de la nube..pdf">
-                        <span class="card-number">5.8</span>
-                        <h3>Instalación del entorno LAMP en VM en la nube</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download"
-                                href="assets/pdf/5.8 Instalación del entorno LAMP en una máquina virtual en infraestructura de la nube..pdf"
-                                download>⬇ Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card"
-                        data-pdf="assets/pdf/5.9 Despliegue de aplicación CRUD en la nube.pdf">
-                        <span class="card-number">5.9</span>
-                        <h3>Despliegue de aplicación CRUD en la nube</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/5.9 Despliegue de aplicación CRUD en la nube.pdf"
-                                download>⬇ Descargar</a></div>
-                    </div>
-                    <div class="evidence-card glass-card" data-pdf="assets/pdf/5.10 Migracion a servicios administrados.pdf">
-                        <span class="card-number">5.10</span>
-                        <h3>Migración a servicios administrados</h3>
-                        <div class="card-actions"><button class="btn-view" onclick="openPDF(this)">📄 Ver PDF</button><a
-                                class="btn-download" href="assets/pdf/5.10 Migracion a servicios administrados.pdf" download>⬇
-                                Descargar</a></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Reflexión Final -->
-        <section id="reflexion" class="section-padding">
-            <div class="container glass-card reveal">
-                <h2 class="section-title">Reflexión Final</h2>
-                <div class="content-block reflection-grid">
-                    <div class="reflection-item">
-                        <h3>Resumen de lo aprendido</h3>
-                        <p class="editable-text" contenteditable="true">[Haz clic aquí para escribir el resumen de lo
-                            aprendido en el curso]</p>
+        <!-- Section 1: Unidad 1 (White) -->
+        <section id="unidad1" class="section-white">
+            <div class="container">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <span class="unit-label" style="margin: 0;">Unidad 01</span>
+                    <div style="color:var(--primary);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="16" x2="12" y2="12" />
+                            <line x1="12" y1="8" x2="12.01" y2="8" />
+                        </svg>
                     </div>
-                    <div class="reflection-item">
-                        <h3>Fortalezas y áreas de oportunidad</h3>
-                        <p class="editable-text" contenteditable="true">[Haz clic aquí para escribir tus fortalezas y en
-                            qué áreas puedes mejorar]</p>
+                </div>
+                <h2 class="scenario-title">Introducción y fundamentos de cómputo en la nube</h2>
+
+                <div class="scenario-grid" style="grid-template-columns: 1fr; gap: 2rem;">
+                    <div class="scenario-text" style="max-width: 900px; margin-bottom: 2rem;">
+                        <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1.5rem;">
+                            <strong>¿Qué es realmente la Nube?</strong> Imagina que es como el servicio de luz o agua:
+                            no necesitas una planta eléctrica en casa, simplemente te conectas a la red y pagas por lo
+                            que consumes. En informática, esto significa que ya no dependemos de un servidor físico en
+                            la oficina, sino de una red global de recursos potentes accesibles vía Internet.
+                        </p>
+
+                        <div
+                            style="background: var(--bg-light); border-left: 4px solid var(--primary); padding: 1.5rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                                </svg>
+                                ¿Por qué aprender esto?
+                            </h4>
+                            <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
+                                Comprender los fundamentos permite dejar de ver "la nube" como un misterio y empezar a
+                                verla como una herramienta estratégica. Es la base de cualquier transformación digital
+                                moderna, permitiéndote diseñar soluciones escalables y eficientes desde cero.
+                            </p>
+                        </div>
+
+                        <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.6;">
+                            Este modelo ha revolucionado la educación y la industria al democratizar la tecnología:
+                            desde un estudiante que guarda sus tareas en Drive hasta una universidad que gestiona miles
+                            de expedientes, todos usan la misma infraestructura escalable y segura.
+                        </p>
                     </div>
-                    <div class="reflection-item full-width">
-                        <h3>Aplicación futura</h3>
-                        <p class="editable-text" contenteditable="true">[Haz clic aquí para describir cómo aplicarás
-                            estos conocimientos en el futuro]</p>
+
+                    <div
+                        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                                    <line x1="6" y1="6" x2="6.01" y2="6" />
+                                    <line x1="6" y1="18" x2="6.01" y2="18" />
+                                </svg>
+                                Pilares del Servicio
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                • <strong>Elasticidad:</strong> El sistema crece o se reduce según la demanda.<br>
+                                • <strong>Ahorro:</strong> Elimina la inversión en hardware costoso.<br>
+                                • <strong>Disponibilidad:</strong> Acceso 24/7 desde cualquier lugar.<br>
+                                • <strong>Seguridad:</strong> Datos protegidos y aislados profesionalmente.
+                            </p>
+                        </div>
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                    <polyline points="2 12 12 17 22 12" />
+                                    <polyline points="2 17 12 22 22 17" />
+                                </svg>
+                                Capas de Entrega (XaaS)
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                • <strong>SaaS:</strong> Software listo para usar (como Gmail o Canvas).<br>
+                                • <strong>PaaS:</strong> Entornos para crear aplicaciones sin gestionar servidores.<br>
+                                • <strong>IaaS:</strong> Alquiler de servidores y redes virtuales para control total.
+                            </p>
+                        </div>
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                                </svg>
+                                Modelos de Implementación
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                • <strong>Pública:</strong> Recursos compartidos, ideal para escalabilidad rápida.<br>
+                                • <strong>Privada:</strong> Exclusiva para una organización con máxima seguridad.<br>
+                                • <strong>Híbrida:</strong> Combina lo mejor de ambos mundos según la necesidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evidence-grid" style="margin-top: 3rem;">
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">1.1 Arquitectura de Red</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/1.1 Arquitectura de red de computadoras.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">1.2 Características Cloud</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/1.2 Síntesis de las Características de concepto de Cómputo en la Nube..pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">1.3 Ventajas y Riesgos</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/1.3 Ventajas, Desventajas y Riesgos del Cómputo en la Nube.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">1.4 Mapa Mental Cloud</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/1.4 Mapa mental de los elementos del Cómputo en la Nube.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Conclusión -->
-        <section id="conclusion" class="section-padding text-center">
-            <div class="container glass-card reveal">
-                <h2 class="section-title text-center">Conclusión</h2>
-                <div class="content-block">
-                    <p class="editable-text text-center" contenteditable="true">La elaboración de este portafolio de
-                        evidencias ha sido una herramienta fundamental en mi proceso de aprendizaje, permitiéndome
-                        organizar, reflexionar y consolidar los conocimientos adquiridos en el curso de Cómputo en la
-                        Nube. [Haz clic aquí para expandir tu conclusión...]</p>
+
+        <!-- Section 2: Unidad 2 (Blue) -->
+        <section id="unidad2" class="section-blue">
+            <div class="container">
+                <div class="scenario-grid">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <span class="unit-label" style="margin: 0;">Unidad 02</span>
+                            <div style="color:var(--primary);">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h2 class="scenario-title">Arquitectura de la nube</h2>
+                        <p class="scenario-text" style="margin-bottom: 1.5rem;">
+                            En esta unidad, dejamos atrás la teoría para conocer de cerca las plataformas más potentes
+                            del mercado y las herramientas que permiten gestionar proyectos en la nube de forma
+                            profesional.
+                        </p>
+
+                        <div
+                            style="background: var(--bg-light); border-left: 4px solid var(--primary); padding: 1.5rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                                </svg>
+                                ¿Por qué aprender esto?
+                            </h4>
+                            <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
+                                Dominar las plataformas líderes (AWS, GCP, Azure) y herramientas de control de versiones
+                                como GitHub es lo que diferencia a un desarrollador de un profesional cloud. Estas son
+                                las herramientas que utiliza la industria global para gestionar proyectos de alto
+                                impacto.
+                            </p>
+                        </div>
+                        <div class="evidence-grid" style="margin-top: 1.5rem;">
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">2.1 Explorar AWS</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/2.1 Explorar la plataforma AWS.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">2.2 Explorar GCP</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/2.2 Explorar plataforma Google Cloud.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">2.3 Actividad GitHub</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/2.3 Actividad GitHub.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">2.4 Explorar Azure</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/2.4 Explorar la plataforma MS Azure.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="activity-grid">
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="2" y1="12" x2="22" y2="12" />
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                </svg>
+                                Las "Tres Grandes" Nubes
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                Exploramos los ecosistemas líderes:<br>
+                                • <strong>AWS:</strong> Plataforma robusta y mundialmente utilizada. Destaca por su
+                                enorme catálogo y manejo a cualquier escala.<br>
+                                • <strong>GCP:</strong> Se distingue por su innovación, Big Data e IA. Usa la
+                                infraestructura global de Google.<br>
+                                • <strong>Azure:</strong> Opción preferida para ecosistemas Microsoft, con una nube
+                                híbrida muy sólida.
+                            </p>
+                        </div>
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                Gestión y Colaboración
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                No basta con tener la nube; necesitamos herramientas para controlar nuestro trabajo:<br>
+                                • <strong>GitHub:</strong> Plataforma esencial para desarrollo colaborativo. Permite
+                                almacenar proyectos, llevar control de versiones (quién cambió qué y cuándo) y trabajar
+                                en equipo de manera organizada.
+                            </p>
+                        </div>
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                                ¿Qué aprendimos a hacer?
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                • <strong>Consolas:</strong> Navegación en AWS, GCP y Azure para localizar servicios
+                                clave como máquinas virtuales y BD.<br>
+                                • <strong>Proyectos:</strong> Creación de repositorios en GitHub para trabajo seguro en
+                                entornos DevOps.<br>
+                                • <strong>Libertad:</strong> Dominar estas plataformas permite elegir la mejor
+                                herramienta según el costo o necesidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Unidad 3 (White) -->
+        <section id="unidad3" class="section-white">
+            <div class="container">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <span class="unit-label" style="margin: 0;">Unidad 03</span>
+                    <div style="color:var(--primary);">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="scenario-title">Consideraciones para el desarrollo</h2>
+
+                <div class="scenario-grid" style="grid-template-columns: 1fr; gap: 2rem;">
+                    <div class="scenario-text" style="max-width: 900px; margin-bottom: 2rem;">
+                        <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1.5rem;">
+                            <strong>Del Monolito al Microservicio:</strong> Las aplicaciones modernas han dejado de ser
+                            bloques únicos y pesados para convertirse en sistemas ágiles, modulares y automatizados.
+                            Este cambio transforma cómo se construye, prueba y entrega el software.
+                        </p>
+
+                        <div
+                            style="background: var(--bg-light); border-left: 4px solid var(--primary); padding: 1.5rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                                </svg>
+                                ¿Por qué aprender esto?
+                            </h4>
+                            <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
+                                Aprender a descomponer sistemas monolíticos en microservicios y automatizar su entrega
+                                mediante la cultura DevOps es esencial para la agilidad moderna. Permite que el software
+                                se actualice constantemente sin interrupciones, que es el corazón de la industria
+                                tecnológica actual.
+                            </p>
+                        </div>
+
+                        <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.6;">
+                            DevOps no es solo una herramienta, es una cultura de colaboración que busca que el software
+                            se cree, se pruebe y se entregue de forma mucho más rápida y segura, apoyándose en
+                            plataformas como Docker, Kubernetes y flujos CI/CD automatizados.
+                        </p>
+                    </div>
+
+                    <div
+                        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="7" height="7" />
+                                    <rect x="14" y="3" width="7" height="7" />
+                                    <rect x="14" y="14" width="7" height="7" />
+                                    <rect x="3" y="14" width="7" height="7" />
+                                </svg>
+                                ¿Qué son los Microservicios?
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                A diferencia de las aplicaciones tradicionales, esta arquitectura divide la app en
+                                servicios pequeños e independientes:<br>
+                                • <strong>Autónomo:</strong> Cada componente cumple una función específica sin afectar
+                                al resto.<br>
+                                • <strong>Integración:</strong> Permite incorporar funciones externas y APIs
+                                fácilmente.<br>
+                                • <strong>Escalabilidad:</strong> Si una parte necesita más potencia, amplías solo ese
+                                servicio.
+                            </p>
+                        </div>
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.5-11.27l5.67-5.67" />
+                                </svg>
+                                Filosofía DevOps y CI/CD
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                DevOps es una cultura de colaboración para entregar software rápido y seguro:<br>
+                                • <strong>CI/CD:</strong> Proceso que automatiza la validación y liberación de código
+                                (ej. al guardar en GitHub).<br>
+                                • <strong>Confiabilidad:</strong> Al automatizar pruebas, garantizamos que el software
+                                siempre funcione.<br>
+                                • <strong>Objetivo:</strong> Crear aplicaciones que se adaptan a los cambios del mercado
+                                con gran velocidad.
+                            </p>
+                        </div>
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                                </svg>
+                                Herramientas Clave
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                Nos apoyamos en tecnologías de vanguardia para este flujo:<br>
+                                • <strong>Docker:</strong> Asegura que cada microservicio funcione en cualquier entorno
+                                mediante "contenedores".<br>
+                                • <strong>Kubernetes:</strong> Director de orquesta, gestionando múltiples contenedores
+                                y balanceando cargas.<br>
+                                • <strong>Monitoreo:</strong> Prometheus y Grafana dan visibilidad en tiempo real sobre
+                                el rendimiento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evidence-grid" style="margin-top: 3rem;">
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">3.1 Sinopsis Microservicios</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/3.1 Sinopsis de los microservicios y flujo devops.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Anexos -->
-        <section id="anexos" class="section-padding">
-            <div class="container glass-card reveal">
-                <h2 class="section-title">Anexos</h2>
-                <p class="text-center">Material complementario que apoya las evidencias del portafolio.</p>
+        <!-- Section 4: Unidad 4 (Blue) -->
+        <section id="unidad4" class="section-blue">
+            <div class="container">
+                <div class="scenario-grid">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <span class="unit-label" style="margin: 0;">Unidad 04</span>
+                            <div style="color:var(--primary);">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h2 class="scenario-title">Seguridad</h2>
+                        <p class="scenario-text" style="margin-bottom: 1.5rem;">
+                            Exploramos cómo proteger las infraestructuras digitales ante amenazas modernas. La seguridad
+                            en la nube no es solo instalar un antivirus, sino aplicar una <strong>estrategia
+                                integral</strong> que abarca desde la configuración de servidores hasta el
+                            comportamiento humano.
+                        </p>
+
+                        <div
+                            style="background: var(--bg-light); border-left: 4px solid var(--primary); padding: 1.5rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                                </svg>
+                                ¿Por qué aprender esto?
+                            </h4>
+                            <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
+                                En una era de amenazas constantes, la seguridad no es una opción, es un cimiento.
+                                Entender cómo piensan los atacantes y cómo blindar la infraestructura te permite
+                                construir sistemas que no solo funcionen, sino que sean confiables y resilientes ante
+                                riesgos reales.
+                            </p>
+                        </div>
+                        <div class="evidence-grid" style="margin-top: 1.5rem;">
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">4.1 Escalada de Privilegios</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/4.1 Práctica de seguridad informática escalada de privilegios.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">4.2 Inyección SQL</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/4.2 Demostrar la inyección SQL.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">4.3 Hardening Apache</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/4.3 Seguridad (hardening) en servidor web Apache 2.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">4.5 Dorks de Google</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/4.5 Comandos Dorks de Goolge.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">4.6 Lluvia de Conceptos</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/4.6 Lluvia de conceptos de los aspectos de la ciberseguridad en la nube..pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">4.7 OverTheWire Bandit</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/4.7 Encontrar la contraseña (overthewire).pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">4.8 Amenazas y Riesgos</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/4.8 Amenazar y Riesgos en Cómputo en la Nube.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">4.9 Políticas de Ciberseguridad</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/4.9 Políticasd e ciberseguridad en CN.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="activity-card"
+                                style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                                <h4 style="margin:0; font-size: 0.9rem;">4.10 Wireshark</h4>
+                                <button class="btn-icon" onclick="openPDF(this)"
+                                    data-pdf="assets/pdf/4.10 Análisis de tráfico de red con Wireshark para la prevención de ataques.pdf">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="activity-grid">
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                                    <line x1="12" y1="9" x2="12" y2="13" />
+                                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                                </svg>
+                                Amenazas y Vulnerabilidades
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                Analizamos los riesgos reales a los que se enfrentan los sistemas en la nube:<br>
+                                • <strong>Inyección SQL:</strong> Cómo errores en el código permiten que un atacante
+                                "engañe" a una base de datos.<br>
+                                • <strong>Escalada de Privilegios:</strong> Obtener control total del sistema mediante
+                                fallos de configuración.<br>
+                                • <strong>Google Dorks:</strong> Comandos avanzados para detectar archivos expuestos o
+                                contraseñas filtradas.
+                            </p>
+                        </div>
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                </svg>
+                                Técnicas de Protección (Hardening)
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                No solo estudiamos los ataques, sino cómo defender los sistemas:<br>
+                                • <strong>Apache:</strong> Técnicas de Hardening para cerrar brechas en servidores web,
+                                ocultando info del sistema.<br>
+                                • <strong>Wireshark:</strong> "Escuchar" la red para identificar patrones sospechosos y
+                                detectar redirecciones maliciosas.<br>
+                                • <strong>Objetivo:</strong> Garantizar que la infraestructura sea resiliente ante
+                                cualquier amenaza externa.
+                            </p>
+                        </div>
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                                Gestión de Riesgos y Normativas
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                La seguridad también es administrativa y legal:<br>
+                                • <strong>NIST y RMF:</strong> Estándares internacionales para identificar, evaluar y
+                                mitigar riesgos.<br>
+                                • <strong>Políticas (Humanas):</strong> Capacitación y uso aceptable de sistemas.<br>
+                                • <strong>Políticas (Software/Dispositivos):</strong> Gestión de certificados, parches,
+                                accesos remotos y copias de seguridad.
+                            </p>
+                        </div>
+                        <div class="activity-card" style="padding:2rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="4 17 10 11 4 5" />
+                                    <line x1="12" y1="19" x2="20" y2="19" />
+                                </svg>
+                                Desafíos Prácticos (Wargames)
+                            </h4>
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
+                                A través de <strong>OverTheWire (Bandit)</strong> pusimos a prueba nuestras habilidades
+                                técnicas:<br>
+                                • Resolvimos acertijos de seguridad en entornos Linux reales.<br>
+                                • Aprendimos a movernos por sistemas de archivos y descifrar contraseñas.<br>
+                                • <strong>Conclusión:</strong> Responsabilidad Compartida: el proveedor asegura la
+                                infraestructura física; nosotros protegemos los datos y configuraciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Unidad 5 (White) -->
+        <section id="unidad5" class="section-white">
+            <div class="container">
+                <div class="scenario-grid">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <span class="unit-label" style="margin: 0;">Unidad 05</span>
+                            <div style="color:var(--primary);">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                    <polyline points="2 17 12 22 22 17" />
+                                    <polyline points="2 12 12 17 22 12" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h2 class="scenario-title">Diseño y Desarrollo de una aplicación informática en la nube</h2>
+                        <div class="scenario-text">
+                            <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1.5rem;">
+                                Exploramos la transición de los entornos locales hacia arquitecturas de nube pública,
+                                aprendiendo a diseñar, desplegar y migrar aplicaciones utilizando tecnologías que
+                                garantizan la alta disponibilidad y la eficiencia operativa.
+                            </p>
+
+                            <div
+                                style="background: var(--bg-light); border-left: 4px solid var(--primary); padding: 1.5rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 2rem;">
+                                <h4
+                                    style="color: var(--primary); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                                    </svg>
+                                    ¿Por qué aprender esto?
+                                </h4>
+                                <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
+                                    Dominar la infraestructura en la nube permite crear soluciones tecnológicas que no
+                                    se detienen. Saber configurar desde una red básica hasta una base de datos
+                                    administrada te otorga la capacidad de construir sistemas profesionales, seguros y
+                                    capaces de crecer al ritmo de cualquier organización moderna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="activity-grid">
+                        <div class="activity-card" style="padding:1.5rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem; font-size: 1rem;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                    <line x1="12" y1="22.08" x2="12" y2="12" />
+                                </svg>
+                                Arquitecturas de Red (VPC)
+                            </h4>
+                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.4;">
+                                Diseñamos el "terreno" digital para alta disponibilidad:<br>
+                                • <strong>Escalabilidad:</strong> Adaptación automática de recursos ante picos de
+                                tráfico.<br>
+                                • <strong>Segmentación:</strong> Subredes para aislar bases de datos de accesos
+                                externos.<br>
+                                • <strong>Balanceo:</strong> Distribución inteligente del tráfico entre servidores.
+                            </p>
+                        </div>
+
+                        <div class="activity-card" style="padding:1.5rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem; font-size: 1rem;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="3" y1="9" x2="21" y2="9" />
+                                    <line x1="9" y1="21" x2="9" y2="9" />
+                                </svg>
+                                Docker y Contenerización
+                            </h4>
+                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.4;">
+                                Evolución ligera de las máquinas virtuales tradicionales:<br>
+                                • <strong>Portabilidad:</strong> Empaquetado de apps con todas sus dependencias.<br>
+                                • <strong>Optimización:</strong> Los contenedores comparten el núcleo del sistema,
+                                siendo más rápidos.<br>
+                                • <strong>Aislamiento:</strong> Evita conflictos entre versiones de software.
+                            </p>
+                        </div>
+
+                        <div class="activity-card" style="padding:1.5rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem; font-size: 1rem;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                </svg>
+                                Entorno LAMP y Despliegue
+                            </h4>
+                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.4;">
+                                Implementación de pilas robustas para sistemas dinámicos:<br>
+                                • <strong>LAMP Stack:</strong> Configuración de Linux, Apache, MySQL y PHP.<br>
+                                • <strong>Acceso Seguro:</strong> Uso de llaves SSH (.pem) y administración remota.<br>
+                                • <strong>Gestión:</strong> Protocolos SCP para transferencia segura de código fuente.
+                            </p>
+                        </div>
+
+                        <div class="activity-card" style="padding:1.5rem;">
+                            <h4
+                                style="color:var(--primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem; font-size: 1rem;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                                </svg>
+                                Servicios Administrados (PaaS)
+                            </h4>
+                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.4;">
+                                Transición hacia la madurez en la infraestructura cloud:<br>
+                                • <strong>Azure DB for MySQL:</strong> Gestión automática de respaldos y parches de
+                                seguridad.<br>
+                                • <strong>Seguridad:</strong> Uso de variables de entorno para proteger
+                                credenciales.<br>
+                                • <strong>Foco:</strong> Elimina el mantenimiento del servidor para priorizar la
+                                aplicación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evidence-grid" style="margin-top: 3rem;">
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">5.2 Arquitectura Red</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/5.2 Análisis y Diseño de una Arquitectura de Red en la Nube (Caso Real).pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">5.3 Introducción Docker</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/5.3 Curso introducción a la contenerización y virtualización..pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">5.4 Instalación Docker</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/5.4 Instalación de Docker.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">5.4.1 Docker Tools</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/5.4.1 Instalación de Docker.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">5.7 Creación VM</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/5.7 Creación de VM en la nube.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">5.8 Entorno LAMP</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/5.8 Instalación del entorno LAMP en una máquina virtual en infraestructura de la nube..pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">5.9 CRUD Cloud</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/5.9 Despliegue de aplicación CRUD en la nube.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="activity-card"
+                        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 1rem 1.5rem;">
+                        <h4 style="margin:0; font-size: 0.9rem;">5.10 Servicios Admin.</h4>
+                        <button class="btn-icon" onclick="openPDF(this)"
+                            data-pdf="assets/pdf/5.10 Migracion a servicios administrados.pdf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Conclusión -->
+        <section id="conclusion" class="section-blue">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <div
+                        style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; justify-content: center;">
+                        <span class="unit-label"
+                            style="margin: 0; background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.2);">Cierre</span>
+                        <div style="color:white; opacity: 0.8;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="scenario-title" style="color: white;">Conclusión</h2>
+                    <p style="font-size: 1.2rem; line-height: 1.8; opacity: 0.9; margin-bottom: 2rem;">
+                        El cómputo en la nube ha dejado de ser una opción tecnológica para convertirse en el pilar
+                        fundamental de la innovación global. Este curso ha demostrado que la verdadera potencia no
+                        reside solo en los recursos infinitos de los grandes proveedores, sino en la capacidad del
+                        ingeniero para orquestarlos de manera inteligente, segura y eficiente.
+                    </p>
+                    <div style="height: 2px; width: 100px; background: white; margin: 2rem auto; opacity: 0.3;"></div>
+                    <p style="font-size: 1rem; opacity: 0.8;">
+                        Al finalizar este recorrido, el portafolio queda como testimonio de una transformación
+                        profesional: de entender conceptos básicos a ser capaz de diseñar arquitecturas que sostienen el
+                        mundo digital.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Reflexión Final -->
+        <section id="reflexion" class="section-white">
+            <div class="container">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <span class="unit-label" style="margin: 0;">Personal</span>
+                        <div style="color:var(--primary);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="scenario-title">Reflexión Final</h2>
+                    <div class="activity-card" style="padding: 3rem; border-top: 5px solid var(--primary);">
+                        <p style="font-size: 1.1rem; color: var(--text-dark); line-height: 1.8; font-style: italic;">
+                            "Mirando hacia atrás, el mayor desafío no fue aprender a configurar un servidor o escribir
+                            una política de seguridad, sino cambiar la mentalidad de 'infraestructura estática' a
+                            'recursos elásticos'. Este aprendizaje me ha otorgado una visión mucho más amplia de lo que
+                            significa ser un Ingeniero en Sistemas Computacionales en el siglo XXI. La nube no es solo
+                            tecnología, es libertad para crear sin límites físicos."
+                        </p>
+                        <div style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 style="margin:0; color: var(--text-dark);">Jesús Francisco Vázquez Alvarado</h5>
+                                <p style="margin:0; font-size: 0.85rem; color: var(--text-gray);">Estudiante de
+                                    Ingeniería en Sistemas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="glass-effect">
-        <p>&copy; 2026 Portafolio de Evidencias - Cómputo en la Nube | TecNM Saltillo Sistemas</p>
-        <a href="#" class="back-to-top">↑ Subir</a>
-    </footer>
-
-    <!-- Modal visor de PDF -->
+    <!-- PDF Modal -->
     <div id="pdf-modal" class="modal">
-        <div class="modal-header">
-            <span id="pdf-modal-title"></span>
-            <span class="close-modal" onclick="closePDFModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="pdf-title" style="font-family:'Outfit';">Visor de Evidencia</h3>
+                <span style="cursor:pointer; font-size:1.5rem;" onclick="closePDFModal()">&times;</span>
+            </div>
+            <iframe id="pdf-viewer" src="" style="width:100%; flex:1; border:none;"></iframe>
         </div>
-        <iframe id="pdf-viewer" src=""></iframe>
     </div>
 
     <script src="js/script.js"></script>
