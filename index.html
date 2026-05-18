@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Cloud — Neuros Edition</title>
+    <title>Portafolio Jesús Vázquez</title>
     <link rel="stylesheet" href="css/style.css?v=1.2">
 </head>
 
 <body>
-    <!-- Mobile Menu Button -->
     <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -18,7 +17,6 @@
         </svg>
     </button>
 
-    <!-- Sidebar Navigation (Collapsible) -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header-mobile">
             <span class="side-brand">Menú</span>
@@ -70,13 +68,13 @@
                     <li><a href="#unidad4" class="side-link" data-unit="04"><span>Unidad 4</span></a></li>
                     <li><a href="#unidad5" class="side-link" data-unit="05"><span>Unidad 5</span></a></li>
                     <li>
-                        <a href="#conclusion" class="side-link">
-                            <svg class="side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                <polyline points="22 4 12 14.01 9 11.01" />
+                        <a href="#reflexion" class="side-link">
+                            <svg class="side-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                             </svg>
-                            <span>Conclusión</span>
+                            <span>Reflexión Final</span>
                         </a>
                     </li>
                 </ul>
@@ -84,27 +82,25 @@
 
             <div class="nav-group">
                 <span class="nav-label">Finalización</span>
-                <a href="#reflexion" class="side-link-main">
+                <a href="#conclusion" class="side-link-main">
                     <svg class="side-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
                     </svg>
-                    <span>Reflexión Final</span>
+                    <span>Conclusión</span>
                 </a>
             </div>
         </nav>
 
         <div class="sidebar-footer">
-            <span class="footer-tag">Cloud Portfolio</span>
+            <span class="footer-tag">Portfolio</span>
         </div>
     </aside>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <main>
-        <!-- Section 0: Hero -->
         <section id="inicio" class="section-blue">
-            <!-- Institutional Logos -->
             <div class="hero-logos">
                 <img src="assets/img/logo_tecnm.png" alt="TecNM" class="hero-logo-left">
                 <img src="assets/img/logo_tec_saltillo.png" alt="Tec Saltillo" class="hero-logo-right">
@@ -114,7 +110,18 @@
             <div class="shape shape-2"></div>
             <div class="container text-center">
                 <h1 class="hero-title">Portafolio de<br>Evidencias</h1>
-                <p class="hero-subtitle">Curso de Cómputo en la Nube</p>
+                <p class="hero-subtitle">Curso de Desarrollo de Aplicaciones Web</p>
+
+                <div class="period-badge">
+                    <svg class="period-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>Enero - Junio 2026</span>
+                </div>
 
                 <div class="student-card" style="margin: 0 auto; max-width: 800px;">
                     <div class="student-stat">
@@ -135,10 +142,9 @@
             </div>
         </section>
 
-        <!-- Section: Introducción -->
         <section id="introduccion" class="section-white">
             <div class="container">
-                <div style="max-width: 800px; margin: 0 auto;">
+                <div style="max-width: 1000px; margin: 0 auto;">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                         <span class="unit-label" style="margin: 0;">Bienvenida</span>
                         <div style="color:var(--primary);">
@@ -151,22 +157,95 @@
                         </div>
                     </div>
                     <h2 class="scenario-title">Introducción</h2>
-                    <p class="scenario-text" style="font-size: 1.1rem; line-height: 1.8;">
-                        El presente portafolio de evidencias es una recopilación estructurada de los conocimientos,
-                        habilidades y competencias adquiridas durante el curso de <strong>Cómputo en la Nube</strong>. A
-                        lo largo de este periodo, hemos explorado la transformación digital desde sus cimientos teóricos
-                        hasta la implementación de arquitecturas complejas en plataformas líderes de la industria.
+                    <p class="scenario-text" style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem;">
+                        Este portafolio reúne las evidencias y desarrollos prácticos elaborados durante el curso de
+                        <strong>Cómputo en la Nube</strong>, la finalidad es documentar de forma estructurada el proceso
+                        de aprendizaje y las competencias adquiridas en el diseño y despliegue de soluciones
+                        tecnológicas, mostrando la evolución desde los conceptos teóricos iniciales hasta la
+                        implementación de infraestructuras complejas y seguras.
                     </p>
-                    <p class="scenario-text" style="margin-top: 1rem;">
-                        A través de una serie de actividades prácticas, investigaciones y laboratorios, este documento
-                        digital refleja el viaje de aprendizaje hacia el dominio de tecnologías que están definiendo el
-                        futuro de la ingeniería de software y la infraestructura tecnológica global.
-                    </p>
+
+                    <div class="activity-grid" style="margin-top: 2.5rem;">
+                        <div class="activity-card" style="padding: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; font-family: 'Outfit', sans-serif;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                                Propósito del Portafolio
+                            </h4>
+                            <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.6; margin: 0;">
+                                Registrar de manera organizada y reflexiva las actividades de aprendizaje y este
+                                portafolio expone de forma directa la capacidad para planificar, desplegar y optimizar
+                                infraestructuras virtuales bajo un enfoque de mejora continua y eficiencia de recursos.
+                            </p>
+                        </div>
+
+                        <div class="activity-card" style="padding: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; font-family: 'Outfit', sans-serif;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                ¿Qué se documenta?
+                            </h4>
+                            <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.6; margin: 0;">
+                                El contenido abarca las prácticas y fundamentos teóricos clave del semestre, en este se
+                                incluyen
+                                análisis de topologías de red, el uso práctico de consolas en AWS, GCP y Azure, el
+                                despliegue de contenedores y diversas pruebas de robustecimiento y ciberseguridad en
+                                servidores web.
+                            </p>
+                        </div>
+
+                        <div class="activity-card" style="padding: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; font-family: 'Outfit', sans-serif;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                ¿Por qué es importante?
+                            </h4>
+                            <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.6; margin: 0;">
+                                La infraestructura en la nube representa el pilar del desarrollo de software moderno y
+                                el como
+                                comprender sus mecanismos es indispensable para construir plataformas que toleren altas
+                                demandas de tráfico, permanezcan seguras frente a posibles ataques y minimicen los
+                                costos operativos.
+                            </p>
+                        </div>
+
+                        <div class="activity-card" style="padding: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; font-family: 'Outfit', sans-serif;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                                Enfoque y Metodología
+                            </h4>
+                            <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.6; margin: 0;">
+                                Se utiliza una metodología basada en la experimentación directa y el aprendizaje activo
+                                e
+                                inicia con la asimilación de modelos de servicio y evoluciona hacia la
+                                resolución de casos reales, fomentando el análisis crítico y la autonomía técnica.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section: Objetivos -->
         <section id="objetivos" class="section-blue">
             <div class="container">
                 <div style="max-width: 1000px; margin: 0 auto;">
@@ -197,10 +276,9 @@
                                 Objetivo General
                             </h4>
                             <p style="font-size:1rem; color:var(--text-dark); line-height:1.6;">
-                                Integrar de manera integral los conocimientos teóricos y prácticos sobre el paradigma
-                                del cómputo en la nube, permitiendo el diseño, despliegue y aseguramiento de
-                                aplicaciones modernas que respondan a las demandas de escalabilidad y eficiencia de la
-                                industria actual.
+                                Consolidar las bases conceptuales y prácticas sobre la computación en la nube para
+                                diseñar, implementar y asegurar aplicaciones distribuidas capaces de responder con
+                                flexibilidad y eficiencia a las necesidades reales del sector tecnológico actual.
                             </p>
                         </div>
 
@@ -215,14 +293,15 @@
                             </h4>
                             <ul
                                 style="font-size:0.9rem; color:var(--text-gray); line-height:1.7; list-style: none; padding: 0;">
-                                <li style="margin-bottom: 0.8rem;">• Identificar y diferenciar los modelos de servicio
-                                    (SaaS, PaaS, IaaS) y sus casos de uso reales.</li>
-                                <li style="margin-bottom: 0.8rem;">• Masterizar el uso de consolas de administración
-                                    profesional en AWS, Google Cloud y MS Azure.</li>
-                                <li style="margin-bottom: 0.8rem;">• Aplicar metodologías DevOps y herramientas de
-                                    contenerización para agilizar el ciclo de desarrollo.</li>
-                                <li style="margin-bottom: 0.8rem;">• Implementar robustas estrategias de ciberseguridad
-                                    para proteger la integridad de los datos en entornos distribuidos.</li>
+                                <li style="margin-bottom: 0.8rem;">• Diferenciar los modelos de servicio (IaaS, PaaS,
+                                    SaaS) e identificar su aplicación adecuada según los requerimientos del proyecto.
+                                </li>
+                                <li style="margin-bottom: 0.8rem;">• Desarrollar destreza en el manejo de consolas de
+                                    nube pública en AWS, GCP y Azure para la administración de recursos.</li>
+                                <li style="margin-bottom: 0.8rem;">• Incorporar herramientas de contenerización y
+                                    prácticas DevOps para automatizar y optimizar la entrega de software.</li>
+                                <li style="margin-bottom: 0.8rem;">• Establecer esquemas de seguridad y robustecimiento
+                                    de sistemas para resguardar la información en servidores remotos.</li>
                             </ul>
                         </div>
                     </div>
@@ -230,7 +309,6 @@
             </div>
         </section>
 
-        <!-- Section 1: Unidad 1 (White) -->
         <section id="unidad1" class="section-white">
             <div class="container">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
@@ -249,10 +327,11 @@
                 <div class="scenario-grid" style="grid-template-columns: 1fr; gap: 2rem;">
                     <div class="scenario-text" style="max-width: 900px; margin-bottom: 2rem;">
                         <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1.5rem;">
-                            <strong>¿Qué es realmente la Nube?</strong> Imagina que es como el servicio de luz o agua:
-                            no necesitas una planta eléctrica en casa, simplemente te conectas a la red y pagas por lo
-                            que consumes. En informática, esto significa que ya no dependemos de un servidor físico en
-                            la oficina, sino de una red global de recursos potentes accesibles vía Internet.
+                            El cómputo en la nube funciona bajo un modelo similar al de los servicios públicos
+                            tradicionales: los recursos informáticos se consumen bajo demanda y se facturan de acuerdo
+                            al uso real, en lugar de instalar y mantener servidores físicos locales en una oficina u
+                            hogar, este paradigma permite acceder a una red global de almacenamiento, procesamiento y
+                            redes administradas por terceros de forma remota.
                         </p>
 
                         <div
@@ -268,16 +347,17 @@
                                 ¿Por qué aprender esto?
                             </h4>
                             <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
-                                Comprender los fundamentos permite dejar de ver "la nube" como un misterio y empezar a
-                                verla como una herramienta estratégica. Es la base de cualquier transformación digital
-                                moderna, permitiéndote diseñar soluciones escalables y eficientes desde cero.
+                                El estudio de estos conceptos es clave para entender la nube como una plataforma
+                                estratégica y no como un recurso aislado, es que el punto de partida indispensable
+                                para planificar arquitecturas que soporten el crecimiento de aplicaciones sin
+                                comprometer la estabilidad.
                             </p>
                         </div>
 
                         <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.6;">
-                            Este modelo ha revolucionado la educación y la industria al democratizar la tecnología:
-                            desde un estudiante que guarda sus tareas en Drive hasta una universidad que gestiona miles
-                            de expedientes, todos usan la misma infraestructura escalable y segura.
+                            Esta tecnología ha democratizado el acceso a recursos informáticos avanzados, permitiendo
+                            que tanto proyectos personales y educativos como grandes infraestructuras corporativas
+                            compartan principios de alta disponibilidad, seguridad y distribución de carga.
                         </p>
                     </div>
 
@@ -295,11 +375,11 @@
                                 </svg>
                                 Pilares del Servicio
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                • <strong>Elasticidad:</strong> El sistema crece o se reduce según la demanda.<br>
-                                • <strong>Ahorro:</strong> Elimina la inversión en hardware costoso.<br>
-                                • <strong>Disponibilidad:</strong> Acceso 24/7 desde cualquier lugar.<br>
-                                • <strong>Seguridad:</strong> Datos protegidos y aislados profesionalmente.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                La infraestructura destaca por su elasticidad, adaptando sus recursos en tiempo real
+                                según el volumen de usuarios, además, optimiza costos al sustituir gastos de capital en
+                                hardware por costos operativos, garantizando disponibilidad continua y un aislamiento
+                                riguroso de la información.
                             </p>
                         </div>
                         <div class="activity-card" style="padding:2rem;">
@@ -313,10 +393,12 @@
                                 </svg>
                                 Capas de Entrega (XaaS)
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                • <strong>SaaS:</strong> Software listo para usar (como Gmail o Canvas).<br>
-                                • <strong>PaaS:</strong> Entornos para crear aplicaciones sin gestionar servidores.<br>
-                                • <strong>IaaS:</strong> Alquiler de servidores y redes virtuales para control total.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                Los servicios se clasifican en tres capas principales: la Infraestructura como Servicio
+                                (IaaS) proporciona control total sobre redes y servidores virtuales, la Plataforma como
+                                Servicio (PaaS) ofrece entornos optimizados para el desarrollo sin la carga de
+                                administrar el sistema operativo; y el Software como Servicio (SaaS) entrega
+                                aplicaciones listas para su uso final.
                             </p>
                         </div>
                         <div class="activity-card" style="padding:2rem;">
@@ -328,10 +410,11 @@
                                 </svg>
                                 Modelos de Implementación
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                • <strong>Pública:</strong> Recursos compartidos, ideal para escalabilidad rápida.<br>
-                                • <strong>Privada:</strong> Exclusiva para una organización con máxima seguridad.<br>
-                                • <strong>Híbrida:</strong> Combina lo mejor de ambos mundos según la necesidad.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                Dependiendo del control de acceso, la nube se implementa de manera pública, compartiendo
+                                hardware físico entre múltiples usuarios de forma aislada; privada, asignando
+                                infraestructura exclusiva para una organización con requisitos estrictos de seguridad; o
+                                híbrida, comunicando ambos entornos para aprovechar sus respectivas ventajas.
                             </p>
                         </div>
                     </div>
@@ -390,8 +473,6 @@
             </div>
         </section>
 
-
-        <!-- Section 2: Unidad 2 (Blue) -->
         <section id="unidad2" class="section-blue">
             <div class="container">
                 <div class="scenario-grid">
@@ -407,9 +488,9 @@
                         </div>
                         <h2 class="scenario-title">Arquitectura de la nube</h2>
                         <p class="scenario-text" style="margin-bottom: 1.5rem;">
-                            En esta unidad, dejamos atrás la teoría para conocer de cerca las plataformas más potentes
-                            del mercado y las herramientas que permiten gestionar proyectos en la nube de forma
-                            profesional.
+                            Durante esta etapa se abordó el estudio práctico de los principales proveedores de servicios
+                            en la nube y las plataformas de desarrollo que facilitan la gestión y el control de
+                            versiones en el entorno profesional.
                         </p>
 
                         <div
@@ -425,10 +506,11 @@
                                 ¿Por qué aprender esto?
                             </h4>
                             <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
-                                Dominar las plataformas líderes (AWS, GCP, Azure) y herramientas de control de versiones
-                                como GitHub es lo que diferencia a un desarrollador de un profesional cloud. Estas son
-                                las herramientas que utiliza la industria global para gestionar proyectos de alto
-                                impacto.
+                                El conocimiento de plataformas como AWS, GCP y Azure, junto al dominio de herramientas
+                                de control de versiones como GitHub, es indispensable en la industria y estas
+                                tecnologías
+                                estructuran los flujos de trabajo globales y permiten colaborar de forma ágil y ordenada
+                                en el despliegue de sistemas.
                             </p>
                         </div>
                         <div class="evidence-grid" style="margin-top: 1.5rem;">
@@ -496,14 +578,12 @@
                                 </svg>
                                 Las "Tres Grandes" Nubes
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                Exploramos los ecosistemas líderes:<br>
-                                • <strong>AWS:</strong> Plataforma robusta y mundialmente utilizada. Destaca por su
-                                enorme catálogo y manejo a cualquier escala.<br>
-                                • <strong>GCP:</strong> Se distingue por su innovación, Big Data e IA. Usa la
-                                infraestructura global de Google.<br>
-                                • <strong>Azure:</strong> Opción preferida para ecosistemas Microsoft, con una nube
-                                híbrida muy sólida.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                El mercado está liderado por tres ecosistemas: Amazon Web Services
+                                (AWS), que sobresale por su madurez y un extenso catálogo de servicios
+                                globales; Google Cloud Platform (GCP), enfocada en soluciones analíticas
+                                de datos e inteligencia artificial; y Microsoft Azure, idónea para la
+                                integración de entornos corporativos y arquitecturas híbridas.
                             </p>
                         </div>
                         <div class="activity-card" style="padding:2rem;">
@@ -518,11 +598,12 @@
                                 </svg>
                                 Gestión y Colaboración
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                No basta con tener la nube; necesitamos herramientas para controlar nuestro trabajo:<br>
-                                • <strong>GitHub:</strong> Plataforma esencial para desarrollo colaborativo. Permite
-                                almacenar proyectos, llevar control de versiones (quién cambió qué y cuándo) y trabajar
-                                en equipo de manera organizada.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                La administración del código fuente se apoya en GitHub, ya que esta herramienta
+                                facilita el control de versiones y el trabajo colaborativo en equipos de
+                                desarrollo, registrando de forma transparente cada modificación y
+                                permitiendo integrar mejoras continuas a los repositorios de manera
+                                segura.
                             </p>
                         </div>
                         <div class="activity-card" style="padding:2rem;">
@@ -535,23 +616,19 @@
                                 </svg>
                                 ¿Qué aprendimos a hacer?
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                • <strong>Consolas:</strong> Navegación en AWS, GCP y Azure para localizar servicios
-                                clave como máquinas virtuales y BD.<br>
-                                • <strong>Proyectos:</strong> Creación de repositorios en GitHub para trabajo seguro en
-                                entornos DevOps.<br>
-                                • <strong>Libertad:</strong> Dominar estas plataformas permite elegir la mejor
-                                herramienta según el costo o necesidad.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                Las prácticas permitieron adquirir destreza en la navegación de consolas
+                                en la nube para aprovisionar cómputo y almacenamiento, asimismo, se
+                                crearon entornos colaborativos en GitHub, desarrollando la capacidad de
+                                evaluar e implementar la opción tecnológica que brinde mejor balance
+                                entre costo y necesidad.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
         </section>
 
-        <!-- Section 3: Unidad 3 (White) -->
         <section id="unidad3" class="section-white">
             <div class="container">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
@@ -571,9 +648,10 @@
                 <div class="scenario-grid" style="grid-template-columns: 1fr; gap: 2rem;">
                     <div class="scenario-text" style="max-width: 900px; margin-bottom: 2rem;">
                         <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1.5rem;">
-                            <strong>Del Monolito al Microservicio:</strong> Las aplicaciones modernas han dejado de ser
-                            bloques únicos y pesados para convertirse en sistemas ágiles, modulares y automatizados.
-                            Este cambio transforma cómo se construye, prueba y entrega el software.
+                            La transición desde arquitecturas monolíticas hacia sistemas basados en microservicios ha
+                            redefinido el ciclo de desarrollo de software y este enfoque modular divide la lógica de
+                            negocio en componentes independientes que facilitan considerablemente el mantenimiento, la
+                            escalabilidad y la entrega ágil.
                         </p>
 
                         <div
@@ -589,17 +667,17 @@
                                 ¿Por qué aprender esto?
                             </h4>
                             <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
-                                Aprender a descomponer sistemas monolíticos en microservicios y automatizar su entrega
-                                mediante la cultura DevOps es esencial para la agilidad moderna. Permite que el software
-                                se actualice constantemente sin interrupciones, que es el corazón de la industria
-                                tecnológica actual.
+                                Comprender la descomposición de servicios y adoptar prácticas DevOps es vital para la
+                                agilidad operativa, con esta metodología nos facilita actualizaciones continuas y
+                                correcciones
+                                rápidas en producción, minimizando el tiempo de inactividad de las aplicaciones.
                             </p>
                         </div>
 
                         <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.6;">
-                            DevOps no es solo una herramienta, es una cultura de colaboración que busca que el software
-                            se cree, se pruebe y se entregue de forma mucho más rápida y segura, apoyándose en
-                            plataformas como Docker, Kubernetes y flujos CI/CD automatizados.
+                            DevOps representa un cambio cultural que unifica el desarrollo y las operaciones, su
+                            implementación se apoya en la automatización de pruebas e integración, garantizando entregas
+                            de código rápidas, estables y seguras mediante tuberías de distribución continua.
                         </p>
                     </div>
 
@@ -617,15 +695,12 @@
                                 </svg>
                                 ¿Qué son los Microservicios?
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                A diferencia de las aplicaciones tradicionales, esta arquitectura divide la app en
-                                servicios pequeños e independientes:<br>
-                                • <strong>Autónomo:</strong> Cada componente cumple una función específica sin afectar
-                                al resto.<br>
-                                • <strong>Integración:</strong> Permite incorporar funciones externas y APIs
-                                fácilmente.<br>
-                                • <strong>Escalabilidad:</strong> Si una parte necesita más potencia, amplías solo ese
-                                servicio.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                Los microservicios son unidades de software independientes y desacopladas que se
+                                comunican mediante APIs y cada servicio se especializa en una tarea única, lo que
+                                permite
+                                modificar, actualizar o escalar de manera individual cada componente sin interrumpir la
+                                operación de los demás.
                             </p>
                         </div>
                         <div class="activity-card" style="padding:2rem;">
@@ -637,14 +712,11 @@
                                 </svg>
                                 Filosofía DevOps y CI/CD
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                DevOps es una cultura de colaboración para entregar software rápido y seguro:<br>
-                                • <strong>CI/CD:</strong> Proceso que automatiza la validación y liberación de código
-                                (ej. al guardar en GitHub).<br>
-                                • <strong>Confiabilidad:</strong> Al automatizar pruebas, garantizamos que el software
-                                siempre funcione.<br>
-                                • <strong>Objetivo:</strong> Crear aplicaciones que se adaptan a los cambios del mercado
-                                con gran velocidad.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                Las prácticas de integración y despliegue continuos (CI/CD) automatizan la compilación,
+                                pruebas y liberación del código fuente y al reducir la intervención manual en los
+                                despliegues, se incrementa la confiabilidad y consistencia del software, acelerando su
+                                llegada a producción.
                             </p>
                         </div>
                         <div class="activity-card" style="padding:2rem;">
@@ -657,14 +729,11 @@
                                 </svg>
                                 Herramientas Clave
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                Nos apoyamos en tecnologías de vanguardia para este flujo:<br>
-                                • <strong>Docker:</strong> Asegura que cada microservicio funcione en cualquier entorno
-                                mediante "contenedores".<br>
-                                • <strong>Kubernetes:</strong> Director de orquesta, gestionando múltiples contenedores
-                                y balanceando cargas.<br>
-                                • <strong>Monitoreo:</strong> Prometheus y Grafana dan visibilidad en tiempo real sobre
-                                el rendimiento.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                El ecosistema técnico se sustenta en Docker para aislar las aplicaciones en contenedores
+                                ligeros que funcionan de manera idéntica en cualquier servidor; Kubernetes para
+                                orquestar y balancear la carga de dichos contenedores a escala; y herramientas como
+                                Prometheus y Grafana para el monitoreo del rendimiento en tiempo real.
                             </p>
                         </div>
                     </div>
@@ -703,10 +772,10 @@
                         </div>
                         <h2 class="scenario-title">Seguridad</h2>
                         <p class="scenario-text" style="margin-bottom: 1.5rem;">
-                            Exploramos cómo proteger las infraestructuras digitales ante amenazas modernas. La seguridad
-                            en la nube no es solo instalar un antivirus, sino aplicar una <strong>estrategia
-                                integral</strong> que abarca desde la configuración de servidores hasta el
-                            comportamiento humano.
+                            En esta sección se analiza la protección de infraestructuras ante vectores de ataque
+                            modernos, ya que la ciberseguridad se aborda bajo una estrategia multidimensional que
+                            involucra el
+                            robustecimiento de servidores, la gestión de accesos y la concienciación de los usuarios.
                         </p>
 
                         <div
@@ -722,10 +791,10 @@
                                 ¿Por qué aprender esto?
                             </h4>
                             <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
-                                En una era de amenazas constantes, la seguridad no es una opción, es un cimiento.
-                                Entender cómo piensan los atacantes y cómo blindar la infraestructura te permite
-                                construir sistemas que no solo funcionen, sino que sean confiables y resilientes ante
-                                riesgos reales.
+                                Dada la constante evolución de las amenazas cibernéticas, la seguridad debe integrarse
+                                desde el diseño inicial del sistema y gracias a conocer las técnicas de intrusión
+                                comunes permite
+                                estructurar contramedidas eficientes y construir entornos resilientes.
                             </p>
                         </div>
                         <div class="evidence-grid" style="margin-top: 1.5rem;">
@@ -853,14 +922,12 @@
                                 </svg>
                                 Amenazas y Vulnerabilidades
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                Analizamos los riesgos reales a los que se enfrentan los sistemas en la nube:<br>
-                                • <strong>Inyección SQL:</strong> Cómo errores en el código permiten que un atacante
-                                "engañe" a una base de datos.<br>
-                                • <strong>Escalada de Privilegios:</strong> Obtener control total del sistema mediante
-                                fallos de configuración.<br>
-                                • <strong>Google Dorks:</strong> Comandos avanzados para detectar archivos expuestos o
-                                contraseñas filtradas.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                Se examinaron vulnerabilidades críticas como la inyección SQL, que permite a un atacante
+                                alterar consultas de bases de datos mediante entradas maliciosas; la escalada de
+                                privilegios, que aprovecha malas configuraciones del sistema para obtener accesos
+                                elevados; y el uso de técnicas de búsqueda avanzada (Google Dorks) para localizar
+                                recursos expuestos accidentalmente en internet.
                             </p>
                         </div>
                         <div class="activity-card" style="padding:2rem;">
@@ -873,14 +940,12 @@
                                 </svg>
                                 Técnicas de Protección (Hardening)
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                No solo estudiamos los ataques, sino cómo defender los sistemas:<br>
-                                • <strong>Apache:</strong> Técnicas de Hardening para cerrar brechas en servidores web,
-                                ocultando info del sistema.<br>
-                                • <strong>Wireshark:</strong> "Escuchar" la red para identificar patrones sospechosos y
-                                detectar redirecciones maliciosas.<br>
-                                • <strong>Objetivo:</strong> Garantizar que la infraestructura sea resiliente ante
-                                cualquier amenaza externa.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                El proceso de protección incluyó el hardening de servidores Apache mediante la
+                                desactivación de firmas del servidor y módulos innecesarios, además, se utilizó
+                                Wireshark para el análisis de tráfico y la detección de anomalías de red, estableciendo
+                                barreras robustas para mitigar la superficie de ataque y asegurar la resiliencia ante
+                                amenazas.
                             </p>
                         </div>
                         <div class="activity-card" style="padding:2rem;">
@@ -896,13 +961,11 @@
                                 </svg>
                                 Gestión de Riesgos y Normativas
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                La seguridad también es administrativa y legal:<br>
-                                • <strong>NIST y RMF:</strong> Estándares internacionales para identificar, evaluar y
-                                mitigar riesgos.<br>
-                                • <strong>Políticas (Humanas):</strong> Capacitación y uso aceptable de sistemas.<br>
-                                • <strong>Políticas (Software/Dispositivos):</strong> Gestión de certificados, parches,
-                                accesos remotos y copias de seguridad.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                La seguridad administrativa se estructuró conforme a marcos internacionales como NIST y
+                                RMF para la identificación, evaluación y mitigación de riesgos, se definieron políticas
+                                de uso aceptable para el personal y directrices técnicas en software, como la gestión de
+                                certificados, parches del sistema, accesos remotos y respaldos periódicos.
                             </p>
                         </div>
                         <div class="activity-card" style="padding:2rem;">
@@ -915,13 +978,12 @@
                                 </svg>
                                 Desafíos Prácticos (Wargames)
                             </h4>
-                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.5;">
-                                A través de <strong>OverTheWire (Bandit)</strong> pusimos a prueba nuestras habilidades
-                                técnicas:<br>
-                                • Resolvimos acertijos de seguridad en entornos Linux reales.<br>
-                                • Aprendimos a movernos por sistemas de archivos y descifrar contraseñas.<br>
-                                • <strong>Conclusión:</strong> Responsabilidad Compartida: el proveedor asegura la
-                                infraestructura física; nosotros protegemos los datos y configuraciones.
+                            <p style="font-size:0.85rem; color:var(--text-gray); line-height:1.6; margin:0;">
+                                A través de laboratorios en OverTheWire (Bandit), se fortalecieron las habilidades en
+                                administración segura de Linux y navegación de sistemas de archivos, estos retos
+                                prácticos reforzaron el modelo de responsabilidad compartida, donde el proveedor
+                                garantiza la seguridad de la infraestructura y el usuario asegura los datos y las
+                                configuraciones.
                             </p>
                         </div>
                     </div>
@@ -929,7 +991,6 @@
             </div>
         </section>
 
-        <!-- Section 5: Unidad 5 (White) -->
         <section id="unidad5" class="section-white">
             <div class="container">
                 <div class="scenario-grid">
@@ -948,9 +1009,9 @@
                         <h2 class="scenario-title">Diseño y Desarrollo de una aplicación informática en la nube</h2>
                         <div class="scenario-text">
                             <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1.5rem;">
-                                Exploramos la transición de los entornos locales hacia arquitecturas de nube pública,
-                                aprendiendo a diseñar, desplegar y migrar aplicaciones utilizando tecnologías que
-                                garantizan la alta disponibilidad y la eficiencia operativa.
+                                Durante esta unidad se llevó a cabo el diseño, despliegue y migración de aplicaciones
+                                locales hacia infraestructuras de nube pública, evaluando el uso de tecnologías que
+                                favorecen la alta disponibilidad y el rendimiento operativo.
                             </p>
 
                             <div
@@ -966,10 +1027,11 @@
                                     ¿Por qué aprender esto?
                                 </h4>
                                 <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">
-                                    Dominar la infraestructura en la nube permite crear soluciones tecnológicas que no
-                                    se detienen. Saber configurar desde una red básica hasta una base de datos
-                                    administrada te otorga la capacidad de construir sistemas profesionales, seguros y
-                                    capaces de crecer al ritmo de cualquier organización moderna.
+                                    El dominio práctico del aprovisionamiento en la nube es clave para implementar
+                                    servicios altamente disponibles, junto con la capacidad de estructurar desde redes
+                                    aisladas
+                                    hasta bases de datos gestionadas dota a los profesionales de competencias críticas
+                                    para sustentar plataformas corporativas escalables.
                                 </p>
                             </div>
                         </div>
@@ -988,13 +1050,12 @@
                                 </svg>
                                 Arquitecturas de Red (VPC)
                             </h4>
-                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.4;">
-                                Diseñamos el "terreno" digital para alta disponibilidad:<br>
-                                • <strong>Escalabilidad:</strong> Adaptación automática de recursos ante picos de
-                                tráfico.<br>
-                                • <strong>Segmentación:</strong> Subredes para aislar bases de datos de accesos
-                                externos.<br>
-                                • <strong>Balanceo:</strong> Distribución inteligente del tráfico entre servidores.
+                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.5; margin:0;">
+                                Se diseñaron topologías de red privada virtual (VPC) utilizando subredes públicas y
+                                privadas para segmentar el tráfico, aislando las bases de datos de accesos externos
+                                directos, además la arquitectura se complementó con balanceadores para distribuir
+                                inteligentemente la carga de usuarios entre las instancias virtuales de servidores,
+                                maximizando la escalabilidad.
                             </p>
                         </div>
 
@@ -1009,12 +1070,11 @@
                                 </svg>
                                 Docker y Contenerización
                             </h4>
-                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.4;">
-                                Evolución ligera de las máquinas virtuales tradicionales:<br>
-                                • <strong>Portabilidad:</strong> Empaquetado de apps con todas sus dependencias.<br>
-                                • <strong>Optimización:</strong> Los contenedores comparten el núcleo del sistema,
-                                siendo más rápidos.<br>
-                                • <strong>Aislamiento:</strong> Evita conflictos entre versiones de software.
+                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.5; margin:0;">
+                                Se implementó la contenerización de servicios mediante Docker para garantizar la
+                                portabilidad del código fuente con todas sus dependencias, los contenedores comparten el
+                                kernel del host, lo que optimiza drásticamente el uso de memoria y procesamiento frente
+                                a las máquinas virtuales tradicionales, eliminando conflictos de versiones.
                             </p>
                         </div>
 
@@ -1027,11 +1087,11 @@
                                 </svg>
                                 Entorno LAMP y Despliegue
                             </h4>
-                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.4;">
-                                Implementación de pilas robustas para sistemas dinámicos:<br>
-                                • <strong>LAMP Stack:</strong> Configuración de Linux, Apache, MySQL y PHP.<br>
-                                • <strong>Acceso Seguro:</strong> Uso de llaves SSH (.pem) y administración remota.<br>
-                                • <strong>Gestión:</strong> Protocolos SCP para transferencia segura de código fuente.
+                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.5; margin:0;">
+                                Se desplegó la pila LAMP (Linux, Apache, MySQL, PHP) en instancias virtuales Linux,
+                                gestionando el acceso mediante llaves criptográficas SSH (.pem) para tareas de
+                                administración remota de forma segura, la carga, sincronización y transferencia de
+                                código fuente se realizó bajo los protocolos seguros de SCP.
                             </p>
                         </div>
 
@@ -1044,14 +1104,11 @@
                                 </svg>
                                 Servicios Administrados (PaaS)
                             </h4>
-                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.4;">
-                                Transición hacia la madurez en la infraestructura cloud:<br>
-                                • <strong>Azure DB for MySQL:</strong> Gestión automática de respaldos y parches de
-                                seguridad.<br>
-                                • <strong>Seguridad:</strong> Uso de variables de entorno para proteger
-                                credenciales.<br>
-                                • <strong>Foco:</strong> Elimina el mantenimiento del servidor para priorizar la
-                                aplicación.
+                            <p style="font-size:0.8rem; color:var(--text-gray); line-height:1.5; margin:0;">
+                                Se migró la base de datos local hacia Azure Database for MySQL, delegando las tareas de
+                                respaldo automático, actualización del motor y parches de seguridad en el proveedor
+                                cloud, las credenciales de conexión se aislaron de manera segura mediante variables de
+                                entorno, permitiendo enfocar los recursos en la optimización del código.
                             </p>
                         </div>
                     </div>
@@ -1158,46 +1215,13 @@
             </div>
         </section>
 
-        <!-- Section: Conclusión -->
-        <section id="conclusion" class="section-blue">
+        <section id="reflexion" class="section-blue">
             <div class="container">
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <div
-                        style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; justify-content: center;">
-                        <span class="unit-label"
-                            style="margin: 0; background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.2);">Cierre</span>
-                        <div style="color:white; opacity: 0.8;">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                <polyline points="22 4 12 14.01 9 11.01" />
-                            </svg>
-                        </div>
-                    </div>
-                    <h2 class="scenario-title" style="color: white;">Conclusión</h2>
-                    <p style="font-size: 1.2rem; line-height: 1.8; opacity: 0.9; margin-bottom: 2rem;">
-                        El cómputo en la nube ha dejado de ser una opción tecnológica para convertirse en el pilar
-                        fundamental de la innovación global. Este curso ha demostrado que la verdadera potencia no
-                        reside solo en los recursos infinitos de los grandes proveedores, sino en la capacidad del
-                        ingeniero para orquestarlos de manera inteligente, segura y eficiente.
-                    </p>
-                    <div style="height: 2px; width: 100px; background: white; margin: 2rem auto; opacity: 0.3;"></div>
-                    <p style="font-size: 1rem; opacity: 0.8;">
-                        Al finalizar este recorrido, el portafolio queda como testimonio de una transformación
-                        profesional: de entender conceptos básicos a ser capaz de diseñar arquitecturas que sostienen el
-                        mundo digital.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section: Reflexión Final -->
-        <section id="reflexion" class="section-white">
-            <div class="container">
-                <div style="max-width: 900px; margin: 0 auto;">
+                <div style="max-width: 1000px; margin: 0 auto;">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <span class="unit-label" style="margin: 0;">Personal</span>
-                        <div style="color:var(--primary);">
+                        <span class="unit-label"
+                            style="margin: 0; background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.2);">Personal</span>
+                        <div style="color:white; opacity: 0.8;">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
@@ -1206,12 +1230,13 @@
                         </div>
                     </div>
                     <h2 class="scenario-title">Reflexión Final</h2>
-                    <div class="activity-card" style="padding: 3rem; border-top: 5px solid var(--primary);">
+                    <div class="activity-card"
+                        style="padding: 3rem; border-top: 5px solid var(--primary); margin-bottom: 2.5rem;">
                         <p style="font-size: 1.1rem; color: var(--text-dark); line-height: 1.8; font-style: italic;">
                             "Mirando hacia atrás, el mayor desafío no fue aprender a configurar un servidor o escribir
                             una política de seguridad, sino cambiar la mentalidad de 'infraestructura estática' a
-                            'recursos elásticos'. Este aprendizaje me ha otorgado una visión mucho más amplia de lo que
-                            significa ser un Ingeniero en Sistemas Computacionales en el siglo XXI. La nube no es solo
+                            'recursos elásticos', este aprendizaje me ha otorgado una visión mucho más amplia de lo que
+                            significa ser un Ingeniero en Sistemas Computacionales, ya que la nube no es solo
                             tecnología, es libertad para crear sin límites físicos."
                         </p>
                         <div style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
@@ -1230,12 +1255,105 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="activity-grid">
+                        <div class="activity-card" style="padding: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem; font-family: 'Outfit', sans-serif;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                    </path>
+                                </svg>
+                                Síntesis del Aprendizaje
+                            </h4>
+                            <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.6; margin: 0;">
+                                El curso me proporcionó un dominio integral de la infraestructura en la nube. Logré
+                                transitar desde los cimientos lógicos de redes y modelos de entrega (IaaS, PaaS, SaaS)
+                                hasta la creación práctica de arquitecturas reales en AWS, Azure y Google Cloud,
+                                integrando flujos DevOps mediante contenerización con Docker y hardening de servidores
+                                web Apache.
+                            </p>
+                        </div>
+
+                        <div class="activity-card" style="padding: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem; font-family: 'Outfit', sans-serif;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg>
+                                Autoevaluación Profesional
+                            </h4>
+                            <p
+                                style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.6; margin-bottom: 0.8rem;">
+                                <strong>Fortalezas:</strong> Diseño lógico de redes, adopción rápida de consolas de
+                                proveedores nube y contenerización de aplicaciones locales.
+                            </p>
+                            <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.6; margin: 0;">
+                                <strong>Oportunidades:</strong> Profundizar en orquestadores complejos como Kubernetes y
+                                en la optimización financiera y de costos cloud.
+                            </p>
+                        </div>
+
+                        <div class="activity-card" style="padding: 2rem;">
+                            <h4
+                                style="color: var(--primary); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem; font-family: 'Outfit', sans-serif;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                                Perspectiva de Futuro
+                            </h4>
+                            <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.6; margin: 0;">
+                                Aplicaré estos conocimientos en el desarrollo de soluciones informáticas nativas de la
+                                nube en la industria de software e implementaré canalizaciones CI/CD automatizadas para
+                                desplegar código seguro y ágil, y regiré mis futuros diseños de sistemas bajo los
+                                estándares de "Ciberseguridad y Privacidad por Diseño" para mitigar riesgos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="section-white">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <div
+                        style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; justify-content: center;">
+                        <span class="unit-label" style="margin: 0;">Cierre</span>
+                        <div style="color: var(--primary);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h2 class="scenario-title">Conclusión</h2>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 2rem;">
+                        El cómputo en la nube ha dejado de ser una opción tecnológica para convertirse en el pilar
+                        fundamental de la innovación global, este curso ha demostrado que la verdadera potencia no
+                        reside solo en los recursos infinitos de los grandes proveedores, sino en la capacidad del
+                        ingeniero para orquestarlos de manera inteligente, segura y eficiente.
+                    </p>
+                    <div style="height: 2px; width: 100px; background: var(--primary); margin: 2rem auto; opacity: 0.3;"></div>
+                    <p style="font-size: 1rem; color: var(--text-gray);">
+                        Al finalizar este recorrido, el portafolio queda como testimonio de una transformación
+                        profesional: de entender conceptos básicos a ser capaz de diseñar arquitecturas que sostienen el
+                        mundo digital.
+                    </p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- PDF Modal -->
     <div id="pdf-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">

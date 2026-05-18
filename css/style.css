@@ -252,6 +252,7 @@ section {
 }
 
 #inicio .hero-title, #inicio .hero-subtitle { color: white; }
+#inicio .hero-subtitle { margin-bottom: 1.5rem; }
 #inicio .stat-value { color: white; }
 #inicio .stat-label { color: rgba(255, 255, 255, 0.7); }
 #inicio .student-card { border-color: rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.1); }
@@ -267,15 +268,24 @@ section {
 #objetivos .scenario-title { color: white; }
 #objetivos .activity-card { background: rgba(255, 255, 255, 0.95); }
 
-/* Specific Conclusion Background */
-#conclusion {
+/* Specific Reflexión Background */
+#reflexion {
     background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('../assets/img/conclusion_bg.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
 }
-#conclusion .scenario-title { color: white; }
+#reflexion .scenario-title { color: white; }
+
+#reflexion .activity-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+@media (min-width: 592px) and (max-width: 904px) {
+    #reflexion .activity-grid .activity-card:last-child {
+        grid-column: span 2;
+    }
+}
 
 
 
@@ -415,6 +425,30 @@ section {
 .student-stat { display: flex; flex-direction: column; }
 .stat-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7; margin-bottom: 0.5rem; }
 .stat-value { font-weight: 700; font-size: 1.1rem; }
+
+/* Period Badge for Hero */
+.period-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 2.5rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.period-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.9;
+}
 
 @media (max-width: 1024px) {
     .sidebar { 
